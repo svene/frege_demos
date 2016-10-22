@@ -1,0 +1,13 @@
+apply plugin: "application"
+apply plugin: "java"
+
+mainClassName = "org.svenehrke.fregedemos.Main"
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+    compile "org.svenehrke:fregelib:1.0-SNAPSHOT"
+}

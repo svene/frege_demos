@@ -1,0 +1,6 @@
+
+module org.svenehrke.fregedemos.FregeFunctions where
+
+java2Frege :: Int -> String
+java2Frege i = unwords $ take i $ repeat "Hi from Frege\n"
+
