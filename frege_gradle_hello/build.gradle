@@ -1,0 +1,13 @@
+plugins {
+  id "org.frege-lang" version "0.5"
+}
+
+subprojects {
+
+  repositories {
+    mavenLocal()
+   mavenCentral()
+  }
+
+}
+
