@@ -6,4 +6,5 @@ object Dependencies {
   val sprayRouting = "io.spray" %% "spray-routing" % sprayVersion
   val playJson = "com.typesafe.play" %% "play-json" % playVersion
   val akkaActor = "com.typesafe.akka" %% "akka-actor" % akkaVersion
+  val fregeLib = "org.svenehrke" % "fregelib" % fregeLibVersion
 }

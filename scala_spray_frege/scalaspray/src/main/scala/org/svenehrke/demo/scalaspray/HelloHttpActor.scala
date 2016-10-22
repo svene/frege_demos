@@ -5,7 +5,15 @@ import spray.routing._
 import spray.http._
 import MediaTypes._
 
+import fj.Unit
+import org.svenehrke.fregedemos.FregeFunctions
+
+import fj.Unit.unit
+
+
 trait HelloHttpService extends HttpService {
+
+  val s: String = FregeFunctions.java2Frege(5)
 
   val helloRoute =
     // http://localhost:8080/sayhelloto?name=sven
@@ -17,7 +25,7 @@ trait HelloHttpService extends HttpService {
             complete(s"""
               <html>
                 <body>
-                  <h1>Hello $name from <i>spray-routing</i>
+                  <h1>Hello $name from <i>spray-routing $s</i>
                     on
                     <i>spray-can</i>
                     !</h1>
